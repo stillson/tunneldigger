@@ -4,10 +4,12 @@
 # Required-Start:    networking                                                 
 # Required-Stop:     networking                                                 
 # Default-Start:     2 3 4 5                                                    
-# Default-Stop:                                                                 
+# Default-Stop:      0 1 6                                                      
 # Short-Description: Start the tunneldigger broker.                             
 # Description:                                                                  
 ### END INIT INFO                                                               
+
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
 . /lib/lsb/init-functions
 
