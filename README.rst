@@ -12,6 +12,7 @@ This is the sudo mesh fork. It has only the following changes:
 - Added init.d file for broker
 - Fixed requirements.txt file
 - Added link to improved documentation in this readme file
+- Changed broker/l2tp_broker.py slightly altering netfilter (iptables) rules
 
 wlan slovenija documentation is found at:
 
