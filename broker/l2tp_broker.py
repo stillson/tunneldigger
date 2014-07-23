@@ -774,12 +774,8 @@ class TunnelManager(object):
     nat = netfilter.table.Table('nat')
     self.rule_prerouting_jmp = netfilter.rule.Rule(jump = prerouting_chain)
     self.rule_postrouting_jmp = netfilter.rule.Rule(jump = postrouting_chain)
-<<<<<<< HEAD
     self.rule_after_postrouting_jmp = netfilter.rule.Rule(jump = after_postrouting_chain)
-    
-=======
 
->>>>>>> upstream/master
     try:
       nat.flush_chain(prerouting_chain)
       nat.delete_chain(prerouting_chain)
@@ -804,9 +800,8 @@ class TunnelManager(object):
       nat.delete_rule('POSTROUTING', self.rule_postrouting_jmp)
     except netfilter.table.IptablesError:
       pass
-<<<<<<< HEAD
-    nat.append_rule('POSTROUTING', self.rule_postrouting_jmp)
-    
+
+
     # juul
     # after the L2TP_POSTROUTING chain, jump to another chain
     if not after_postrouting_chain in nat.list_chains():
@@ -814,9 +809,7 @@ class TunnelManager(object):
 
     nat.append_rule(postrouting_chain, self.rule_after_postrouting_jmp)
 
-=======
     nat.prepend_rule('POSTROUTING', self.rule_postrouting_jmp)
->>>>>>> upstream/master
 
     # Clear out the connection tracking tables
     self.conntrack.killall(proto = conntrack.IPPROTO_UDP, src = self.address)
