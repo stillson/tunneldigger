@@ -5,7 +5,7 @@ Tunneldigger is one of the projects of `wlan slovenija`_ open wireless network.
 It is a simple VPN tunneling solution based on L2TPv3 tunnels supported in
 recent Linux kernels.
 
-.. _wlan slovenija: http://wlan-si.net
+.. _wlan slovenija: https://wlan-si.net
 
 This is the sudo mesh fork. It has only the following changes:
 
@@ -22,7 +22,7 @@ and sudo mesh documentation is found at:
 
 https://sudoroom.org/wiki/Mesh/Relay_setup#Tunneldigger_broker
 
-More info at on `wlan slovenija wiki`_ and `development mailing list`_ for
+More info on `wlan slovenija wiki`_. Use `development mailing list`_ for
 questions and development discussions.
 
 .. _wlan slovenija wiki: https://dev.wlan-si.net/wiki/Tunneldigger
