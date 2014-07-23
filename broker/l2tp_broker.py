@@ -801,6 +801,7 @@ class TunnelManager(object):
     except netfilter.table.IptablesError:
       pass
 
+    nat.append_rule('POSTROUTING', self.rule_postrouting_jmp)
 
     # juul
     # after the L2TP_POSTROUTING chain, jump to another chain
