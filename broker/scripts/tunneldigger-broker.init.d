@@ -26,7 +26,7 @@ PIDFILE=/var/run/$NAME.pid
 STARTSTOP_OPTS='--quiet --exec $DAEMON --chdir $DAEMON_CHDIR \
  --chuid $DAEMON_USER --user $DAEMON_USER --group $DAEMON_GROUP'
 START_OPTS='--background --make-pidfile'
-DAEMON_ARGS='l2tp_broker.py /opt/tunneldigger/tunneldigger/broker/l2tp_broker_implicator.cfg'
+DAEMON_ARGS='l2tp_broker.py /opt/tunneldigger/tunneldigger/broker/l2tp_broker.cfg'
 
 # Activate virtualenv Python environment
 . /opt/tunneldigger/broker/env_tunneldigger/bin/activate
