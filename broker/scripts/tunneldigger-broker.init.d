@@ -16,7 +16,7 @@ DESC="Tunneldigger brokerage daemon"
 NAME=tunneldigger-broker
 PROJECT_PATH=/opt/tunneldigger/tunneldigger/broker
 SCRIPTNAME=/etc/init.d/$NAME
-DAEMON=/opt/tunneldigger/env_tunneldigger/bin/python
+DAEMON=/opt/tunneldigger/broker/env_tunneldigger/bin/python
 DAEMON_CHDIR=$PROJECT_PATH
 DAEMON_USER=root
 DAEMON_GROUP=root
@@ -29,7 +29,7 @@ START_OPTS='--background --make-pidfile'
 DAEMON_ARGS='l2tp_broker.py /opt/tunneldigger/tunneldigger/broker/l2tp_broker_implicator.cfg'
 
 # Activate virtualenv Python environment
-. /opt/tunneldigger/env_tunneldigger/bin/activate
+. /opt/tunneldigger/broker/env_tunneldigger/bin/activate
 
 # Exit if the package is not installed
 [ -x "$DAEMON" ] || exit 0
