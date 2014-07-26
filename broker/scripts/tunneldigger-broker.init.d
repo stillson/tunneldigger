@@ -1,8 +1,8 @@
 #!/bin/sh
 ### BEGIN INIT INFO
 # Provides:          tunneldigger-broker
-# Required-Start:    $local_fs $remote_fs $network $syslog exim4 mongodb postgresql
-# Required-Stop:     $local_fs $remote_fs $network $syslog exim4 mongodb postgresql
+# Required-Start:    $local_fs $remote_fs $network $syslog exim4 
+# Required-Stop:     $local_fs $remote_fs $network $syslog exim4
 # Default-Start:     2 3 4 5
 # Default-Stop:      0 1 6
 # Short-Description: Tunneldigger L2TPv3 brokerage daemon
