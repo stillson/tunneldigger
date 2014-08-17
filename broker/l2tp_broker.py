@@ -756,6 +756,7 @@ class TunnelManager(object):
     try:
       gevent.subprocess.call([script] + [str(x) for x in args])
     except:
+      logger.debug(traceback.format_exc())
       logger.warning("Failed to execute hook '%s'!" % script)
       logger.warning(traceback.format_exc())
 
