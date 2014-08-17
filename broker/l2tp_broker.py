@@ -822,8 +822,6 @@ class TunnelManager(object):
 
     nat.append_rule(postrouting_chain, self.rule_after_postrouting_jmp)
 
-    nat.prepend_rule('POSTROUTING', self.rule_postrouting_jmp)
-
     # Clear out the connection tracking tables
     self.conntrack.killall(proto = conntrack.IPPROTO_UDP, src = self.address)
     self.conntrack.killall(proto = conntrack.IPPROTO_UDP, dst = self.address)
