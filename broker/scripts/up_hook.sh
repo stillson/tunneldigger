@@ -1,2 +1,2 @@
 #!/bin/sh
-ifup $3=mesh-tunnel
+ifup --force $3=mesh-tunnel
