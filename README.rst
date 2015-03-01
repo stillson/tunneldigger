@@ -25,7 +25,15 @@ https://sudoroom.org/wiki/Mesh/Relay_setup#Tunneldigger_broker
 More info on `wlan slovenija wiki`_. Use `development mailing list`_ for
 questions and development discussions.
 
-.. _wlan slovenija wiki: https://dev.wlan-si.net/wiki/Tunneldigger
+For development *wlan slovenija* open wireless network `development Trac`_ is
+used, so you can see `existing open tickets`_ or `open a new one`_ there. Source
+code is available on GitHub_. If you have any questions or if you want to
+discuss the project, use `development mailing list`_.
+
+.. _development Trac: https://dev.wlan-si.net/wiki/Tunneldigger
+.. _existing open tickets: https://dev.wlan-si.net/report
+.. _open a new one: https://dev.wlan-si.net/newticket
+.. _GitHub: https://github.com/wlanslovenija/tunneldigger
 .. _development mailing list: https://wlan-si.net/lists/info/development
 
 or sudo mesh wiki and development list:
